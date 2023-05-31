@@ -5,4 +5,4 @@ apps:
     run: "npm start-worker"
     
 release:
-  run: "sleep 10; echo hi"
+  run: "echo hi"
