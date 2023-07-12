@@ -18,9 +18,9 @@ jobs:
       with:
         command: apply -f ./porter.yaml
       env:
-        PORTER_CLUSTER: "2861"
+        PORTER_CLUSTER: "2875"
         PORTER_HOST: https://dashboard.getporter.dev
-        PORTER_PROJECT: "7832"
+        PORTER_PROJECT: "7887"
         PORTER_STACK_NAME: test
         PORTER_TAG: ${{ steps.vars.outputs.sha_short }}
-        PORTER_TOKEN: ${{ secrets.PORTER_STACK_7832_2861 }}
+        PORTER_TOKEN: ${{ secrets.PORTER_STACK_7887_2875 }}
