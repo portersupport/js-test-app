@@ -1,6 +1,6 @@
 apps:
   web:
-    run: "npm start" 
+    run: "node index.js" 
   worker:
     run: "npm start-worker"
     
