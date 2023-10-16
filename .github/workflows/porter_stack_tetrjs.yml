@@ -2,7 +2,7 @@
   push:
     branches:
     - master
-name: Deploy to Porter
+name: Deploy to tetrjs
 jobs:
   porter-deploy:
     runs-on: ubuntu-latest
@@ -16,11 +16,11 @@ jobs:
       timeout-minutes: 30
       uses: porter-dev/porter-cli-action@v0.1.0
       with:
-        command: apply -f porter.yaml
+        command: apply -f ./porter.yaml
       env:
-        PORTER_CLUSTER: "2699"
+        PORTER_CLUSTER: "3034"
         PORTER_HOST: https://dashboard.getporter.dev
-        PORTER_PROJECT: "6729"
-        PORTER_STACK_NAME: github-test
+        PORTER_PROJECT: "8686"
+        PORTER_STACK_NAME: tetrjs
         PORTER_TAG: ${{ steps.vars.outputs.sha_short }}
-        PORTER_TOKEN: ${{ secrets.PORTER_STACK_6729_2699 }}
+        PORTER_TOKEN: ${{ secrets.PORTER_STACK_8686_3034 }}
