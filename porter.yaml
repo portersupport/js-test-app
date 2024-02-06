@@ -5,6 +5,3 @@ apps:
   worker:
     type: worker
     run: "npm start-worker"
-    
-release:
-  run: "echo hi"
